@@ -1,0 +1,171 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Ubuntu', sans-serif;
+}
+
+:root{
+   --bg-color: #212529;
+   --x-color: #0087b1;
+   --o-color: #c50052;
+   --border-color: #666;
+   --gray: #444;
+   --font-color: #f1f5f9;
+}
+
+button, h1, span, div{
+   transition: .15s;
+}
+
+body{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+
+   background-color: var(--bg-color);
+   color: var(--font-color)
+}
+
+.title{
+   font-size: 4rem;
+   margin: 1rem 0;
+}
+
+.names{
+   margin: 1rem;
+   display: flex;
+   flex-direction: column;
+   gap: .3rem
+}
+
+.names input {
+   padding: .5rem 1rem;
+   font-size: 1rem;
+   height: 2.5rem;
+
+   background-color: var(--bg-color);
+   border: solid 2px var(--border-color);
+   color: var(--font-color)
+}
+
+.nameDiv{
+   display: flex;
+   align-items: center;
+}
+
+#nameX {
+   background-color: var(--x-color);
+   border: 1px solid var(--x-color);
+   font-size: 2rem;
+
+   height: 2.5rem;
+   width: 2.5rem;
+   padding: 0 .5rem;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+#nameO {
+   background-color: var(--o-color);
+   border: 1px solid var(--o-color);
+   font-size: 2rem;
+
+   height: 2.5rem;
+   width: 2.5rem;
+   padding: 0 .5rem;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.mainContent{
+   background-color: var(--gray);
+   padding: 1.5rem;
+
+   display: flex;
+   flex-direction: column;
+}
+
+.currentPlayerDiv{
+   font-size: 2rem;
+   font-weight: bold;
+   text-align: center;
+
+   margin: 0 0 2rem 0;
+}
+
+.board{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 1fr 1fr 1fr;
+   gap: .2rem;
+
+   background-color: #f1f5f9;
+}
+
+.boardButton{
+   width: 7rem;
+   height: 7rem;
+
+   border: none;
+   background-color: var(--gray);
+
+   font-size: 5rem;
+   font-weight: bold;
+   color: var(--gray)
+}
+
+.resultDiv{
+   margin: 1rem;
+   font-size: 1.5rem;
+   font-weight: bold;
+
+   padding: .5rem 3rem;
+}
+
+.x {
+   color: var(--x-color)
+}
+
+.o {
+   color: var(--o-color)
+}
+
+.xWin {
+   background-color: var(--x-color);
+   color: var(--font-color)
+}
+
+.oWin {
+   background-color: var(--o-color);
+   color: var(--font-color)
+}
+
+.tie{
+   background-color: var(--gray);
+   color: var(--font-color)
+}
+
+.playAgain{
+   padding: .5rem 2rem;
+   font-size: 1rem;
+   margin: 0 0 1rem 0;
+
+   border: 3px solid var(--border-color);
+   background-color: transparent;
+   color: var(--font-color);
+
+   transition: .3s;
+   opacity: 0;
+}
+
+.playAgain:hover{
+   background-color: var(--font-color);
+   border: var(--font-color) solid 3px;
+   color: var(--bg-color)
+}

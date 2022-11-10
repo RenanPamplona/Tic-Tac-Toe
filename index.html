@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+   <title>Tic Tac Toe</title>
+
+   <link rel="stylesheet" href="style.css">
+   <script defer src='./index.js'></script>
+</head>
+<body>
+   <h1 class="title">Tic Tac Toe</h1>
+
+   <div class="names">
+      <div class="nameDiv">
+         <input type="text" placeholder="Player 1's Name..." value="Player 1" id="playerOneName">
+         <div id="nameX">x</div>
+      </div>
+      <div class="nameDiv">
+         <input type="text" placeholder="Player 2's Name..." value="Player 2" id="playerTwoName">
+         <div id="nameO">o</div>
+      </div>
+   </div>
+
+   <div class="mainContent">
+      <div class="currentPlayerDiv">
+         <span id="currentPlayer">Player 1 plays...</span>
+      </div>
+
+      <div class="board">
+         <button class='boardButton' id="1">1</button>
+         <button class='boardButton' id="2">2</button>
+         <button class='boardButton' id="3">3</button>
+         <button class='boardButton' id="4">4</button>
+         <button class='boardButton' id="5">5</button>
+         <button class='boardButton' id="6">6</button>
+         <button class='boardButton' id="7">7</button>
+         <button class='boardButton' id="8">8</button>
+         <button class='boardButton' id="9">9</button>
+      </div>
+   </div>
+
+   <div class="resultDiv" id="result">
+      <span></span>
+   </div>
+
+   <button class="playAgain" id="playAgain">Play Again?</button>
+</body>
+</html>
