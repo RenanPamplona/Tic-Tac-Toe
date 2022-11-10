@@ -10,6 +10,7 @@ const playerTwo = {
 
 let plays = 0
 let currentPlayer = playerOne
+let startingPlayer = playerOne
 let winner = ''
 
 // Change Player 1 name
@@ -211,10 +212,12 @@ playAgainButton.addEventListener('click', () => {
 
    currentPlayerField.classList.remove('o')
    currentPlayerField.classList.remove('x')
-   currentPlayerField.innerText = `${playerTwo.name} plays first`
-   currentPlayerField.classList.add('o')
-   currentPlayer = playerTwo
+   let playerToStart = startingPlayer == playerOne ? playerTwo : playerOne
+   currentPlayerField.innerText = `${playerToStart.name} plays first`
+   currentPlayerField.classList.add(`${playerToStart.type}`)
+   currentPlayer = playerToStart
 
    plays = 0
    winner = ""
+   startingPlayer = startingPlayer == playerOne ? playerTwo : playerOne
 })
