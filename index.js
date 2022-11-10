@@ -211,9 +211,9 @@ playAgainButton.addEventListener('click', () => {
 
    currentPlayerField.classList.remove('o')
    currentPlayerField.classList.remove('x')
-   currentPlayerField.innerText = `${playerOne.name} plays first`
-   currentPlayerField.classList.add('x')
-   currentPlayer = playerOne
+   currentPlayerField.innerText = `${playerTwo.name} plays first`
+   currentPlayerField.classList.add('o')
+   currentPlayer = playerTwo
 
    plays = 0
    winner = ""
